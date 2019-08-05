@@ -1,0 +1,17 @@
+{
+  "name": "csvjsonapi",
+  "version": "1.0.0",
+  "description": "Google sheet to json",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "fayazara",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "convert-csv-to-json": "0.0.15",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1"
+  }
+}
