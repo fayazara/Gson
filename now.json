@@ -1,9 +1,16 @@
 {
     "name": "Gson-api",
     "version": 2,
+    "scripts": {
+        "build": "node index.js"
+    },
     "builds": [
-    {
-        "src": "index.js",
-        "use": "@now/node-server"
-    }]
+        {
+            "src": "index.js",
+            "use": "@now/node-server"
+        }
+    ],
+    "github": {
+        "enabled": true
+    }
 }
