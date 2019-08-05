@@ -1,7 +1,11 @@
 const express = require('express');
 const axios = require('axios');
-const app = express();  
-const csv = require('csvtojson')
+const cors = require('cors');
+const app = express();
+const csv = require('csvtojson');
+
+app.use(cors());
+
 app.get('/', (req, res) => {
     if (req.query.url) {
         axios.get(req.query.url)
@@ -21,7 +25,7 @@ app.get('/', (req, res) => {
             })
     } else {
         let errMsg = {
-            message: "Enter a valid csv url"
+            message: "Inva"
         }
         res.send(errMsg);
     }
