@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
             })
     } else {
         let errMsg = {
-            message: "Inva"
+            message: "Invalid URL or URL not provided"
         }
         res.send(errMsg);
     }
